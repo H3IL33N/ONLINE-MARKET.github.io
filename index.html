@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Market - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Market</h1>
+        <nav>
+            <button id="cart-btn">Carrito (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Productos Destacados</h2>
+            <div class="product-list">
+                <!-- Productos de ejemplo -->
+                <div class="product" data-id="1" data-name="Producto 1" data-price="10.00">
+                    <img src="https://via.placeholder.com/200" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <div class="product" data-id="2" data-name="Producto 2" data-price="20.00">
+                    <img src="https://via.placeholder.com/200" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+                <!-- Agrega más productos aquí -->
+            </div>
+        </section>
+
+        <section id="cart" class="hidden">
+            <h2>Tu Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button id="checkout-btn">Comprar</button>
+            <button id="close-cart">Cerrar</button>
+        </section>
+
+        <section id="checkout" class="hidden">
+            <h2>Finalizar Compra</h2>
+            <form id="checkout-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Online Market. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
