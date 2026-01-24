@@ -8,10 +8,10 @@
 <body>
 
 <header>
-  <h1>🛒 Mi Tienda Online</h1>
-  <div class="carrito">
-    Carrito: <span id="contador">0</span>
-  </div>
+  <h1>🛍 Mi Tienda</h1>
+  <a href="carrito.html" class="carrito-link">
+    🛒 Carrito (<span id="contador">0</span>)
+  </a>
 </header>
 
 <main class="productos">
@@ -26,6 +26,12 @@
     <h3>Zapatos</h3>
     <p>$50.000</p>
     <button onclick="agregarCarrito('Zapatos', 50000)">Agregar</button>
+  </div>
+
+  <div class="producto">
+    <h3>Gorra</h3>
+    <p>$15.000</p>
+    <button onclick="agregarCarrito('Gorra', 15000)">Agregar</button>
   </div>
 
 </main>
